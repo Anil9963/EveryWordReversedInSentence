@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <details><fieldset><h1>JavaScript Code</h1>
+    function reverseWords(sentence) <br>
+        {<br>
+          const words = sentence.split(' ');<br>
+          const reversedWords = words.map(word => {<br>
+          return word.split('').reverse().join('');<br>
+          });<br>
+          return reversedWords.join(' ');<br>
+        }<br>
+
+          const inputSentence = "This is a sunny day";<br>
+          const reversedSentence = reverseWords(inputSentence);<br>
+          document.getElementById("sent").innerHTML=reversedSentence;<br>
+          
+          console.log(inputSentence);<br>
+          console.log(reversedSentence);
+        </fieldset>
+  </details>
+  <h1>After Every Word Reversed In The Sentence: </h1>
+  <p id="sent" style="font-size: 26px;"></p>
+    <script>
+        function reverseWords(sentence) 
+        {
+          const words = sentence.split(' ');
+          const reversedWords = words.map(word => {
+          return word.split('').reverse().join('');
+          });
+          return reversedWords.join(' ');
+        }
+
+          const inputSentence = "This is a sunny day";
+          const reversedSentence = reverseWords(inputSentence);
+          document.getElementById("sent").innerHTML=reversedSentence;
+          
+          console.log(inputSentence);
+          console.log(reversedSentence);
+    </script>
+</body>
+</html>
